@@ -1,8 +1,7 @@
 import re
 from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
-from sklearn.linear_model import LogisticRegression
-from sklearn.naive_bayes import MultinomialNB
+
 
 def preprocess_tweet(tweet):
     """
@@ -36,20 +35,4 @@ def extract_features(tweet_dataset):
 
     return features
 
-def init_classifier(classifier, params):
-    """
-    This function initializes the classifier.
-    
-    Parameters:
-    classifier(str) : Name of the classifier.
-    params(float) : Additional parameters.
-    
-    Returns:
-    model(sklearn.linear_model) : Model initialization with its hyperparameters.
-    """
-    if classifier == "bayes":
-        model = MultinomialNB()
-    else:
-        model = LogisticRegression(C=params)
-        
-    return model
+

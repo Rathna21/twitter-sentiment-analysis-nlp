@@ -8,6 +8,8 @@
 -Methods
  -Naive Bayes Classifier.
  -Logistic Regression Classifier.
+ -SVM 
+ -Random Forest
 
 Preprocessing and Feature Extraction
  -Basic NLP techniques.
